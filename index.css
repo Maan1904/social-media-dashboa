@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+body {
+  background-color: hsl(230, 17%, 14%);
+}
+main {
+  height: 100vh;
+  width: 1100px;
+  margin: 0px auto;
+}
+.social1 {
+  padding: 25px 0;
+}
+.social1top {
+  background-color: hsl(230, 31%, 16%);
+  position: absolute;
+  top: 0;
+  height: 217px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.allcards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.mediaspan {
+  font-size: 30px;
+  font-weight: 500;
+}
+.mediaprag {
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  opacity: 75%;
+  margin-top: 5px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.mode {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  width: 45px;
+  border-radius: 50px;
+  padding: 2px;
+}
+.circle {
+  background-color: hsl(232, 19%, 15%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.line {
+  background-color: gray;
+  height: 1px;
+  width: 100%;
+  display: none;
+}
+.today {
+  background-color: hsl(228, 28%, 20%);
+  width: 100%;
+  height: 230px;
+  margin-top: 30px;
+  border-radius: 7px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.todayh1 {
+  font-size: 65px;
+}
+.todayspan {
+  font-size: 18px;
+  font-weight: 100;
+  opacity: 60%;
+  margin-bottom: 25px;
+}
+.iconfacebook {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.facebookspan {
+  font-size: 13px;
+  opacity: 55%;
+  font-weight: 300;
+  text-align: center;
+}
+.classic {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.uptoday {
+  display: flex;
+  gap: 9px;
+  justify-content: center;
+}
+.today12 {
+  font-size: 12px;
+  color: hsl(163, 72%, 41%);
+  font-weight: bold;
+  opacity: 70%;
+}
+.todayimg {
+  width: 9px;
+  object-fit: contain;
+}
+.thetop {
+  background-color: hsl(208, 92%, 53%);
+  padding: 2.1px 116.5px;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.thetoptwo {
+  background-color: hsl(208, 92%, 53%);
+  padding: 2.1px 116.5px;
+  left: 0;
+  right: 0;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+}
+.social2 {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.likes {
+  width: 100%;
+  height: 150px;
+  background-color: hsl(228, 28%, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 28px;
+  border-radius: 5px;
+}
+.likes:hover {
+  opacity: 95%;
+  cursor: pointer;
+  background-color: hsl(229, 24%, 54%);
+}
+.allcards2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.pageview {
+  display: flex;
+  justify-content: space-between;
+}
+.imgper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pageh1 {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 70%;
+}
+.pagespan {
+  font-size: 30px;
+  font-weight: bold;
+}
+.percen {
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(163, 72%, 41%);
+  opacity: 70%;
+}
+.percentage {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.perimg {
+  height: 5px;
+  object-fit: contain;
+}
+@media only screen and (max-width: 700px) {
+  .top {
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+  }
+  main {
+    width: 100%;
+    padding: 0px 19px;
+  }
+  .line {
+    display: flex;
+  }
+  .dark {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .allcards {
+    grid-template-columns: repeat(1, 1fr);
+    /* place-content: center; */
+    /* place-items: center; */
+    width: 100%;
+  }
+  .today {
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+  }
+  .allcards2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
